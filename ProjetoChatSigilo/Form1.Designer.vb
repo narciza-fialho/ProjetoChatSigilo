@@ -27,12 +27,14 @@ Partial Class Form1
         Me.IPExternoLabel = New System.Windows.Forms.Label()
         Me.SeuIPTextBox = New System.Windows.Forms.TextBox()
         Me.IPExternoTextBox = New System.Windows.Forms.TextBox()
+        Me.ChaveTextBox = New System.Windows.Forms.TextBox()
+        Me.ChaveLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ConectarButton
         '
         Me.ConectarButton.BackColor = System.Drawing.Color.Aqua
-        Me.ConectarButton.Location = New System.Drawing.Point(137, 129)
+        Me.ConectarButton.Location = New System.Drawing.Point(136, 154)
         Me.ConectarButton.Name = "ConectarButton"
         Me.ConectarButton.Size = New System.Drawing.Size(104, 46)
         Me.ConectarButton.TabIndex = 0
@@ -71,12 +73,30 @@ Partial Class Form1
         Me.IPExternoTextBox.Size = New System.Drawing.Size(176, 23)
         Me.IPExternoTextBox.TabIndex = 4
         '
+        'ChaveTextBox
+        '
+        Me.ChaveTextBox.Location = New System.Drawing.Point(109, 116)
+        Me.ChaveTextBox.Name = "ChaveTextBox"
+        Me.ChaveTextBox.Size = New System.Drawing.Size(176, 23)
+        Me.ChaveTextBox.TabIndex = 5
+        '
+        'ChaveLabel
+        '
+        Me.ChaveLabel.AutoSize = True
+        Me.ChaveLabel.Location = New System.Drawing.Point(63, 119)
+        Me.ChaveLabel.Name = "ChaveLabel"
+        Me.ChaveLabel.Size = New System.Drawing.Size(40, 15)
+        Me.ChaveLabel.TabIndex = 6
+        Me.ChaveLabel.Text = "Chave"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Salmon
-        Me.ClientSize = New System.Drawing.Size(382, 187)
+        Me.ClientSize = New System.Drawing.Size(382, 212)
+        Me.Controls.Add(Me.ChaveLabel)
+        Me.Controls.Add(Me.ChaveTextBox)
         Me.Controls.Add(Me.IPExternoTextBox)
         Me.Controls.Add(Me.SeuIPTextBox)
         Me.Controls.Add(Me.IPExternoLabel)
@@ -94,4 +114,6 @@ Partial Class Form1
     Friend WithEvents IPExternoLabel As Label
     Friend WithEvents SeuIPTextBox As TextBox
     Friend WithEvents IPExternoTextBox As TextBox
+    Friend WithEvents ChaveTextBox As TextBox
+    Friend WithEvents ChaveLabel As Label
 End Class
